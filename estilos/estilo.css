@@ -1,0 +1,79 @@
+:root{
+    --fundo: #e61919;
+    --vermelho: #ff0000;
+    --vermelho2: #cc0000;
+    --vermelhoclaro: #f4040f;
+    --brancof: #f5f5f5;
+
+}
+
+*{margin: 0; padding: 0;
+    background-color: var(--fundo);color: var(--brancof)}
+header{
+    background-color: red;
+    height: 300px;
+    display: flex;
+
+}
+header img{
+    height: 100%;
+    background-color: floralwhite;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+header ul{
+    background-color: gray;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    display: flex;
+    margin: 20px;
+    width: 150px;
+    height: 30px;
+    background-image: linear-gradient(var(--brancof), var(--vermelho2));
+    border-radius: 50px;
+    background-color: floralwhite;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.baner{
+    margin: 30px;
+    height: 500px;
+    animation: slide1 10s infinite;
+}
+
+@keyframes slide1{
+    0%,35%{
+        background-image: url(../img/vest.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+    }
+    35%,65%{
+        background-image: url(../img/arruda.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+    }
+    70%,100%{
+        background-image: url(../img/cps.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+    }
+}
+.local{
+    margin: 30px;
+    background-color: var(--vermelhoclaro);
+    text-align: center;
+    border-radius: 50px;
+}
+.iframe{
+    margin:30px;
+}
